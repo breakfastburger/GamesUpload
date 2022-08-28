@@ -1,27 +1,719 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Балди: Baldis Basics | breakfastburger</title>
-<link rel="stylesheet" href="/lib/game-loader/gameloader.css" />
-<script src="/lib/game-loader/gameloader.js"></script>
+<html class=" jwyjaf idc0_342"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head>
+<title>Балди: Классика - Vseigru.net</title>
+<link rel="stylesheet" href="/lib/game-loader/gameloader.css">
+<script async="" src="//www.google-analytics.com/analytics.js"></script><script src="/lib/game-loader/gameloader.js"></script>
 <meta charset="UTF-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-</head>
+<style type="text/css" data-jss="">
+.jss128 {
+  text-shadow: 2px 2px 2px #00476c;
+  font-weight: bold;
+}
+.jss129 {
+  color: white;
+}
+.jss130 {
+  color: #d7ebf6;
+  font-size: 18px;
+  font-weight: normal;
+}
+</style><style type="text/css" data-jss="">
+.jss131 {
+  text-shadow: 2px 2px 2px #00476c;
+  font-weight: bold;
+}
+.jss132 {
+  color: white;
+}
+.jss133 {
+  color: #d7ebf6;
+  font-size: 18px;
+  font-weight: normal;
+}
+</style><style type="text/css" data-jss="">
+.jss125 {
+  text-shadow: 2px 2px 2px #00476c;
+  font-weight: bold;
+}
+.jss126 {
+  color: white;
+}
+.jss127 {
+  color: #d7ebf6;
+  font-size: 18px;
+  font-weight: normal;
+}
+</style><style type="text/css" data-jss="">
+.jss122 {
+  color: #bcdd55;
+}
+.jss123 {
+  color: white;
+}
+.jss124 {
+  color: #20defd;
+}
+</style><style type="text/css" data-jss="" data-meta="MuiGrid">
+.jss31 {
+  width: 100%;
+  display: flex;
+  z-index: 1;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.jss32 {
+  margin: 0;
+  box-sizing: border-box;
+}
+.jss33 {
+  min-width: 0;
+}
+.jss34 {
+  flex-direction: column;
+}
+.jss35 {
+  flex-direction: column-reverse;
+}
+.jss36 {
+  flex-direction: row-reverse;
+}
+.jss37 {
+  flex-wrap: nowrap;
+}
+.jss38 {
+  flex-wrap: wrap-reverse;
+}
+.jss39 {
+  align-items: center;
+}
+.jss40 {
+  align-items: flex-start;
+}
+.jss41 {
+  align-items: flex-end;
+}
+.jss42 {
+  align-items: baseline;
+}
+.jss43 {
+  align-content: center;
+}
+.jss44 {
+  align-content: flex-start;
+}
+.jss45 {
+  align-content: flex-end;
+}
+.jss46 {
+  align-content: space-between;
+}
+.jss47 {
+  align-content: space-around;
+}
+.jss48 {
+  justify-content: center;
+}
+.jss49 {
+  justify-content: flex-end;
+}
+.jss50 {
+  justify-content: space-between;
+}
+.jss51 {
+  justify-content: space-around;
+}
+.jss52 {
+  width: calc(100% + 8px);
+  margin: -4px;
+}
+.jss52 > .jss32 {
+  padding: 4px;
+}
+.jss53 {
+  width: calc(100% + 16px);
+  margin: -8px;
+}
+.jss53 > .jss32 {
+  padding: 8px;
+}
+.jss54 {
+  width: calc(100% + 24px);
+  margin: -12px;
+}
+.jss54 > .jss32 {
+  padding: 12px;
+}
+.jss55 {
+  width: calc(100% + 32px);
+  margin: -16px;
+}
+.jss55 > .jss32 {
+  padding: 16px;
+}
+.jss56 {
+  width: calc(100% + 40px);
+  margin: -20px;
+}
+.jss56 > .jss32 {
+  padding: 20px;
+}
+.jss57 {
+  flex-grow: 1;
+  max-width: 100%;
+  flex-basis: 0;
+}
+.jss58 {
+  max-width: 8.33333%;
+  flex-basis: 8.33333%;
+}
+.jss59 {
+  max-width: 16.66667%;
+  flex-basis: 16.66667%;
+}
+.jss60 {
+  max-width: 25%;
+  flex-basis: 25%;
+}
+.jss61 {
+  max-width: 33.33333%;
+  flex-basis: 33.33333%;
+}
+.jss62 {
+  max-width: 41.66667%;
+  flex-basis: 41.66667%;
+}
+.jss63 {
+  max-width: 50%;
+  flex-basis: 50%;
+}
+.jss64 {
+  max-width: 58.33333%;
+  flex-basis: 58.33333%;
+}
+.jss65 {
+  max-width: 66.66667%;
+  flex-basis: 66.66667%;
+}
+.jss66 {
+  max-width: 75%;
+  flex-basis: 75%;
+}
+.jss67 {
+  max-width: 83.33333%;
+  flex-basis: 83.33333%;
+}
+.jss68 {
+  max-width: 91.66667%;
+  flex-basis: 91.66667%;
+}
+.jss69 {
+  max-width: 100%;
+  flex-basis: 100%;
+}
+@media (min-width:600px) {
+  .jss70 {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .jss71 {
+    max-width: 8.33333%;
+    flex-basis: 8.33333%;
+  }
+  .jss72 {
+    max-width: 16.66667%;
+    flex-basis: 16.66667%;
+  }
+  .jss73 {
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .jss74 {
+    max-width: 33.33333%;
+    flex-basis: 33.33333%;
+  }
+  .jss75 {
+    max-width: 41.66667%;
+    flex-basis: 41.66667%;
+  }
+  .jss76 {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .jss77 {
+    max-width: 58.33333%;
+    flex-basis: 58.33333%;
+  }
+  .jss78 {
+    max-width: 66.66667%;
+    flex-basis: 66.66667%;
+  }
+  .jss79 {
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .jss80 {
+    max-width: 83.33333%;
+    flex-basis: 83.33333%;
+  }
+  .jss81 {
+    max-width: 91.66667%;
+    flex-basis: 91.66667%;
+  }
+  .jss82 {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:960px) {
+  .jss83 {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .jss84 {
+    max-width: 8.33333%;
+    flex-basis: 8.33333%;
+  }
+  .jss85 {
+    max-width: 16.66667%;
+    flex-basis: 16.66667%;
+  }
+  .jss86 {
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .jss87 {
+    max-width: 33.33333%;
+    flex-basis: 33.33333%;
+  }
+  .jss88 {
+    max-width: 41.66667%;
+    flex-basis: 41.66667%;
+  }
+  .jss89 {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .jss90 {
+    max-width: 58.33333%;
+    flex-basis: 58.33333%;
+  }
+  .jss91 {
+    max-width: 66.66667%;
+    flex-basis: 66.66667%;
+  }
+  .jss92 {
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .jss93 {
+    max-width: 83.33333%;
+    flex-basis: 83.33333%;
+  }
+  .jss94 {
+    max-width: 91.66667%;
+    flex-basis: 91.66667%;
+  }
+  .jss95 {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .jss96 {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .jss97 {
+    max-width: 8.33333%;
+    flex-basis: 8.33333%;
+  }
+  .jss98 {
+    max-width: 16.66667%;
+    flex-basis: 16.66667%;
+  }
+  .jss99 {
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .jss100 {
+    max-width: 33.33333%;
+    flex-basis: 33.33333%;
+  }
+  .jss101 {
+    max-width: 41.66667%;
+    flex-basis: 41.66667%;
+  }
+  .jss102 {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .jss103 {
+    max-width: 58.33333%;
+    flex-basis: 58.33333%;
+  }
+  .jss104 {
+    max-width: 66.66667%;
+    flex-basis: 66.66667%;
+  }
+  .jss105 {
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .jss106 {
+    max-width: 83.33333%;
+    flex-basis: 83.33333%;
+  }
+  .jss107 {
+    max-width: 91.66667%;
+    flex-basis: 91.66667%;
+  }
+  .jss108 {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1920px) {
+  .jss109 {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .jss110 {
+    max-width: 8.33333%;
+    flex-basis: 8.33333%;
+  }
+  .jss111 {
+    max-width: 16.66667%;
+    flex-basis: 16.66667%;
+  }
+  .jss112 {
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .jss113 {
+    max-width: 33.33333%;
+    flex-basis: 33.33333%;
+  }
+  .jss114 {
+    max-width: 41.66667%;
+    flex-basis: 41.66667%;
+  }
+  .jss115 {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .jss116 {
+    max-width: 58.33333%;
+    flex-basis: 58.33333%;
+  }
+  .jss117 {
+    max-width: 66.66667%;
+    flex-basis: 66.66667%;
+  }
+  .jss118 {
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .jss119 {
+    max-width: 83.33333%;
+    flex-basis: 83.33333%;
+  }
+  .jss120 {
+    max-width: 91.66667%;
+    flex-basis: 91.66667%;
+  }
+  .jss121 {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+</style><style type="text/css" data-jss="" data-meta="MuiTooltip">
+.jss135 {
+  z-index: 1500;
+  pointer-events: none;
+}
+.jss135.jss136 {
+  pointer-events: auto;
+}
+.jss137 {
+  color: #fff;
+  opacity: 0;
+  padding: 4px 8px;
+  transform: scale(0);
+  font-size: 0.625rem;
+  transition: opacity 150ms cubic-bezier(0.4, 0, 1, 1) 0ms,transform 150ms cubic-bezier(0.4, 0, 1, 1) 0ms;
+  min-height: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.4em;
+  border-radius: 2px;
+  background-color: #445655;
+}
+.jss137.jss136 {
+  opacity: 0.9;
+  transform: scale(1);
+  transition: opacity 150ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,transform 150ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+}
+.jss138 {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  line-height: 1.14286em;
+}
+.jss139 {
+  margin: 0 24px;
+  transform-origin: right center;
+}
+@media (min-width:600px) {
+  .jss139 {
+    margin: 0 14px;
+  }
+}
+.jss140 {
+  margin: 0 24px;
+  transform-origin: left center;
+}
+@media (min-width:600px) {
+  .jss140 {
+    margin: 0 14px;
+  }
+}
+.jss141 {
+  margin: 24px 0;
+  transform-origin: center bottom;
+}
+@media (min-width:600px) {
+  .jss141 {
+    margin: 14px 0;
+  }
+}
+.jss142 {
+  margin: 24px 0;
+  transform-origin: center top;
+}
+@media (min-width:600px) {
+  .jss142 {
+    margin: 14px 0;
+  }
+}
+</style><style type="text/css" data-jss="">
+.jss134 {
+  font-size: 12px;
+}
+</style><style type="text/css" data-jss="" data-meta="MuiTypography">
+.jss7 {
+  margin: 0;
+  display: block;
+}
+.jss8 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 7rem;
+  font-weight: 300;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.14286em;
+  margin-left: -.04em;
+  letter-spacing: -.04em;
+}
+.jss9 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.30357em;
+  margin-left: -.02em;
+  letter-spacing: -.02em;
+}
+.jss10 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.8125rem;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.06667em;
+  margin-left: -.02em;
+}
+.jss11 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.20588em;
+}
+.jss12 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.35417em;
+}
+.jss13 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.3125rem;
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.16667em;
+}
+.jss14 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5em;
+}
+.jss15 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.71429em;
+}
+.jss16 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.46429em;
+}
+.jss17 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.375em;
+}
+.jss18 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+.jss19 {
+  text-align: left;
+}
+.jss20 {
+  text-align: center;
+}
+.jss21 {
+  text-align: right;
+}
+.jss22 {
+  text-align: justify;
+}
+.jss23 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.jss24 {
+  margin-bottom: 0.35em;
+}
+.jss25 {
+  margin-bottom: 16px;
+}
+.jss26 {
+  color: inherit;
+}
+.jss27 {
+  color: #3f51b5;
+}
+.jss28 {
+  color: #f50057;
+}
+.jss29 {
+  color: rgba(0, 0, 0, 0.54);
+}
+.jss30 {
+  color: #f44336;
+}
+</style><style type="text/css" data-jss="">
+.jss4 {
+  padding: 10px;
+  font-size: 16px;
+  min-height: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #00476c;
+  text-transform: uppercase;
+}
+.jss5 {
+  color: #fff;
+}
+.jss6 {
+  color: #bcdd55;
+  text-shadow: 1px 1px 1px #00476c;
+}
+</style><style type="text/css" data-jss="">
+.jss1 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+  overflow: hidden;
+  background-size: cover;
+  background-color: #383838;
+  background-position: center;
+}
+.jss1:before {
+  top: 0;
+  width: 100%;
+  filter: blur(16px);
+  height: 100%;
+  content: "";
+  display: block;
+  opacity: 0.5;
+  z-index: 0;
+  position: absolute;
+  background-size: cover;
+  background-image: url(logo.jpg);
+}
+.jss2 {
+  top: 0;
+  right: 4px;
+  z-index: 2;
+  position: absolute;
+  line-height: 0;
+}
+.jss3 {
+  font-size: 45px;
+  padding-top: 7px;
+}
+</style><style type="text/css" data-jss="" data-meta="MuiCssBaseline">
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+</style></head>
 <body>
 <script type="text/javascript">
       var options = {
-        author: "Vseigru",        
+        author: "BreakfastBurger",        
 		logo: "logo.jpg",
-        gameName: "Балди: Классика",
+        gameName: "Baldis Basics",
 		gameNameEu:"Baldi's Basics Classic",
         gameUrl: "31841",
-        moreLink: ("http://vseigru.net"),
+        moreLink: ("http://vseigru.net"),а
         allowFullscreen: true,
         locale: "ru_RU",
         loader: "5.6.x",
         loaderOptions: {"moduleJsonUrl": "Build/BaldiClassic.json", "unityLoaderUrl": "Build/UnityLoader.js"},
       };
       GameInit.load(options);
-    </script>
-</body>
-</html>
+    </script><div style="height: 625px; width: 1366px;"><div class="game"><div id="game-container" style="padding: 0px; margin: 0px; border: 0px; background: url(&quot;Build/BaldiClassic.jpg&quot;) center center / cover;"><canvas id="#canvas" style="width: 100%; height: 100%;"></canvas></div><div><div class="jss2"><p class="jss7 jss16 jss21 jss4"><span class="jss6"></span><span class="jss5"></span></p></div><div class="jss31 jss34 jss1"><div class="jss31 jss34 jss48" style="flex: 1 1 0%;"><div class="jss32"><h1 class="jss7 jss9 jss20 jss3"><div class="jss125"><span><span class="jss122">V</span><span class="jss123">SE</span><span class="jss124">I</span><span class="jss123">GRU</span></span><span class="jss128 jss129"></span><span class="jss131 jss133" style="display: inline;">.NET</span></div></h1></div></div><div class="jss31 jss34" style="flex: 3 1 0%;"><div class="jss32" style="height: 100%;"><div class="jss31 jss34 jss39 jss50 gameloader"><div class="jss32"><div class="gameloader-game-name">Baldi's Basics Classic</div></div><div class="jss32"><div class="jss32 gameloader-logo"><img src="logo.jpg"></div></div><div class="jss32"><div class="jss31 jss34 jss39"><div class="jss32"><div><div class="gameloader-progressbar"><div class="gameloader-progressbar-progress" style="width: 100%;"></div></div><div class="gameloader-progress-info">Game Loading...</div></div></div></div></div></div></div></div></div></div><div class="game-footer"><div class="jss31 jss39 jss51"><div class="jss32" style="flex: 1 1 0%;"><div class="jss31 jss39"><div class="jss32"><div style="place-content: center; align-items: center; box-sizing: border-box; display: flex; flex-flow: row nowrap;"><div class="game-footer-logo game-footer-btn"><a href="https://vseigru.net/?utm_source=https%3A%2F%2Fg.vseigru.net%2F9%2Figra-baldi-klassika%2F&amp;utm_medium=game_frame&amp;utm_campaign=%D0%91%D0%B0%D0%BB%D0%B4%D0%B8%3A+%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D0%BA%D0%B0&amp;utm_content=logo" target="_blank"><div class="jss125"><span><span class="jss122">V</span><span class="jss123">SE</span><span class="jss124">I</span><span class="jss123">GRU</span></span><span class="jss128 jss129"></span><span class="jss131 jss133" style="display: inline;">.NET</span></div></a></div></div></div></div></div><div class="jss32"><div class="jss31 jss51"><div class="jss32"><div class="game-footer-btn game-footer-more"><div style="place-content: center; align-items: center; box-sizing: border-box; display: flex; flex-flow: row nowrap; height: 100%;"><a href="https://vseigru.net/?utm_source=https%3A%2F%2Fg.vseigru.net%2F9%2Figra-baldi-klassika%2F&amp;utm_medium=game_frame&amp;utm_campaign=%D0%91%D0%B0%D0%BB%D0%B4%D0%B8%3A+%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D0%BA%D0%B0&amp;utm_content=more_link" class="game-footer-link" target="_blank">More Games »</a></div></div></div><div class="jss32"><div class="game-footer-btn game-footer-img-button game-footer-fullscreen-btn"><span><div style="place-content: center; align-items: center; box-sizing: border-box; display: flex; flex-flow: row nowrap;"><img src="https://g.vseigru.net/lib/game-loader/btn/fullscreen_btn.png"></div></span></div></div></div></div></div></div></div></div><div class="jss135" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(489px, 539px, 0px);" data-placement="top"><div role="tooltip" aria-hidden="true" class="jss137 jss134 jss141">Fullscreen</div></div>
+
+
+<script src="Build/UnityLoader.js" async=""></script><script src="blob:https://g.vseigru.net/14011224-3aec-46eb-940f-1a30d1f2a818"></script></body></html>
