@@ -1,41 +1,40 @@
-<html><head>
-<title>Minecraft | breakfastburger</title>
-<link rel="icon" href="https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico">
-</head><body style="margin: 0px;"><iframe 
-src="https://precisionclient.vercel.app/" 
-style="border:hidden;overflow:hidden;position:absolute;top:0;left:0%;bottom:0%;right:0%;width:100%;height:100%;"></iframe></body></html>
-<style>body {
-    overflow: hidden;
-    /* Hide scrollbars */
-} </style>
-<script>
-/* Get the documentElement (<html>) to display the page in fullscreen */
-var elem = document.documentElement;
-
-/* View in fullscreen */
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE11 */
-    elem.msRequestFullscreen();
-  }
-}
-
-/* Close fullscreen */
-function closeFullscreen() {
-  if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.webkitExitFullscreen) { /* Safari */
-    document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) { /* IE11 */
-    document.msExitFullscreen();
-  }
-}
-</script>
-<script>
-document.addEventListener('contextmenu', function(e) {
-  e.preventDefault();
-});
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Play minecraft 1.8 in your browser" />
+    <meta name="keywords" content="eaglercraft, eaglercraftx, minecraft, 1.8, 1.8.8" />
+    <title>EaglercraftX 1.8 | BBGames</title>
+    <meta property="og:locale" content="en-US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="EaglercraftX 1.8" />
+    <meta property="og:description" content="Play minecraft 1.8 in your browser" />
+    <meta property="og:image" content="favicon.png" />
+    <link type="image/png" rel="shortcut icon" href="favicon.png" />
+    <script type="text/javascript" src="classes.js"></script>
+    <script type="text/javascript" src="fix-webm-duration.js"></script>
+    <script type="text/javascript">
+      window.addEventListener("load", () => {
+        if (document.location.href.startsWith("file:")) {
+          alert("HTTP please, do not open this file locally, run a local HTTP server and load it via HTTP");
+        } else {
+          window.eaglercraftXOpts = {
+            container: "game_frame",
+            assetsURI: "assets.epk",
+            localesURI: "lang/",
+            servers: [
+              { addr: "wss://mc.asspixel.net", name: "AssPixel" },
+              { addr: "wss://sus.shhnowisnottheti.me", name: "Ayunboom" },
+              { addr: "wss://aeon-network.net/1.8", name: "Aeon" },
+              { addr: "wss://beta.vanillacraftsmp.org/", name: "VanillaCraft" },
+              { addr: "wss://g.deev.is/eaglerx-reference", name: "Reference Implementation" },
+            ],
+          };
+          main();
+        }
+      });
+    </script>
+  </head>
+  <body style="margin: 0px; width: 100vw; height: 100vh; overflow: hidden;" id="game_frame"></body>
+</html>
